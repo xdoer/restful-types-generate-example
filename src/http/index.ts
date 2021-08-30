@@ -12,7 +12,7 @@ export const prequest = create()
 const middleware = wrapper<Request, Response>({
   enable: import.meta.env.DEV,
   httpAgent: create({ path: 'http://localhost:10010' }),
-  outPutDir: '/Users/xdoer/Desktop/project/types-generator-example/src/api-types',
+  outPutDir: 'src/api-types',
   parseResponse(res) {
     return res as any
   },
